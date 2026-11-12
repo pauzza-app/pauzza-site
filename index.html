@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pauzza · offers while your AI tool is working</title>
+<meta name="description" content="Pauzza is an opt-in add-on that turns the wait in your AI coding tool into offers and promo codes. It never reads your code, prompts or conversations. Test version: every code is made up.">
+<meta name="theme-color" content="#141015">
+<!-- Rehearsal: keep the page out of search engines while it is for invited testers only.
+     Remove the next line when the page should be found. -->
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://pauzza.ge/">
+<!-- The picture and text shown when the link is shared in a chat or on social media. -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pauzza.ge/">
+<meta property="og:title" content="Pauzza · offers while your AI tool is working">
+<meta property="og:description" content="An opt-in add-on that turns the wait in your AI coding tool into offers and promo codes. It never reads your code. Test version: every code is made up.">
+<meta property="og:image" content="https://pauzza.ge/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/pauzza-app-icon-dark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#install">Skip to install</a>
+
+<header class="wrap nav">
+  <a class="logo" href="#top" aria-label="Pauzza, top of page">
+    <img class="for-dark" src="assets/pauzza-lockup-primary-dark.svg" width="582" height="158" alt="pauzza">
+    <img class="for-light" src="assets/pauzza-lockup-primary-light.svg" width="582" height="158" alt="pauzza">
+  </a>
+  <nav class="nav-links" aria-label="Page">
+    <a class="hide-s" href="#how">how it works</a>
+    <a class="hide-s" href="#privacy">privacy</a>
+    <button class="theme-toggle" type="button" id="theme" aria-label="Switch between light and dark">theme</button>
+    <a class="btn btn-primary btn-small" href="#install">get pauzza</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 1 · hero -->
+  <div class="hero">
+    <canvas id="rain" aria-hidden="true"></canvas>
+    <div class="wrap code-line" aria-hidden="true">
+      <span class="ln">40</span>
+      <p class="comment" data-type>// your AI tool is working. nothing to do but wait.</p>
+    </div>
+    <div class="wrap code-line" aria-hidden="true">
+      <span class="ln">41</span>
+      <p class="comment" data-type>// stuck on this line?</p>
+    </div>
+    <div class="band">
+      <div class="wrap code-line">
+        <span class="ln" aria-hidden="true"><i class="bp"></i>42</span>
+        <h1><span class="h1-text">paused on line&nbsp;<span class="nb">42.<i class="cursor" aria-hidden="true"></i></span></span></h1>
+      </div>
+    </div>
+    <div class="wrap code-line rise" style="--i:0">
+      <span class="ln" aria-hidden="true">43</span>
+      <p class="after">take a break;</p>
+    </div>
+    <div class="wrap code-line rise" style="--i:1">
+      <span class="ln" aria-hidden="true">44</span>
+      <p class="lead">Pauzza is an opt-in add-on that turns the wait in your AI coding tool into offers and promo codes. It never reads your code, prompts or conversations.</p>
+    </div>
+    <div class="wrap code-line rise" style="--i:2">
+      <span class="ln" aria-hidden="true">45</span>
+      <div class="cta-row">
+        <button class="btn btn-primary" type="button" data-copy="c1" data-label="Copy install line" data-goto="install">Copy install line</button>
+        <a class="btn btn-ghost" href="#how">how it works</a>
+        <p class="pill">test version · every code is made up</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="shots" data-reveal>
+        <figure class="shot">
+          <img src="assets/shot-connect.png" width="560" height="345" alt="The Pauzza panel before connecting. It reads: Connect to Pauzza's server to get made-up test codes. Pauzza never reads your code, prompts or conversations. Below is one Connect button, and a sample offer marked: Samples, not real offers.">
+          <figcaption>// the panel you get when you type /pauzza. one button, your choice.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/shot-codes.png" width="560" height="329" alt="The Pauzza panel once connected, headed: Test codes, not real offers. Two made-up offers, Sample Kitchen and Example Coffee, each with a Get code button. A line at the bottom reads: A code is fetched only when you press Get code.">
+          <figcaption>// connected. Sample Kitchen and Example Coffee are made up.</figcaption>
+        </figure>
+      </div>
+      <p class="swipe-hint" aria-hidden="true">// swipe →</p>
+    </div>
+  </div>
+
+  <!-- 2 · install -->
+  <section id="install">
+    <div class="wrap">
+      <p class="eyebrow">// install</p>
+      <h2>One line. Copy, paste, done.</h2>
+      <p class="intro">Nothing starts by itself: Pauzza stays silent until you type <code class="inline">/pauzza</code> and accept the Terms.</p>
+
+      <div class="install" data-reveal>
+        <div class="cmd cmd-big">
+          <code id="c1">claude plugin install pauzza <span class="nb">--marketplace</span> <span class="nb">pauzza-app/pauzza-marketplace</span></code>
+          <button class="copy" type="button" data-copy="c1" data-label="Copy">Copy</button>
+        </div>
+        <ol class="after-copy">
+          <li><span class="step-n" aria-hidden="true">01</span><span>Paste it into your terminal and press Enter.</span></li>
+          <li><span class="step-n" aria-hidden="true">02</span><span>Open your AI coding tool and type <code class="inline">/pauzza</code>. If it was already open, type <code class="inline">/reload-plugins</code> first.</span></li>
+        </ol>
+        <p class="caption" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+
+      <details>
+        <summary>Other ways</summary>
+
+        <h3>Without the terminal</h3>
+        <p>Type this in the chat box of an open session. The tool asks you to confirm the new source, then installs.</p>
+        <div class="cmd">
+          <code id="c2">/plugin install pauzza <span class="nb">--marketplace</span> <span class="nb">pauzza-app/pauzza-marketplace</span></code>
+          <button class="copy" type="button" data-copy="c2" data-label="Copy">Copy</button>
+        </div>
+
+        <h3>On an older version</h3>
+        <p>The one-line install needs version 2.1.292 or later; Pauzza itself needs 2.1.287 or later. Check with <code class="inline">claude --version</code>. On an older version, run these two lines in a terminal instead.</p>
+        <div class="cmd">
+          <code id="c3">claude plugin marketplace add <span class="nb">pauzza-app/pauzza-marketplace</span></code>
+          <button class="copy" type="button" data-copy="c3" data-label="Copy">Copy</button>
+        </div>
+        <div class="cmd">
+          <code id="c4">claude plugin install pauzza@pauzza</code>
+          <button class="copy" type="button" data-copy="c4" data-label="Copy">Copy</button>
+        </div>
+
+        <h3>Remove it</h3>
+        <p>Open <code class="inline">/pauzza</code>, press ⚙ and delete the saved data. Then run these two lines and restart the app.</p>
+        <div class="cmd">
+          <code id="c5">claude plugin uninstall pauzza@pauzza</code>
+          <button class="copy" type="button" data-copy="c5" data-label="Copy">Copy</button>
+        </div>
+        <div class="cmd">
+          <code id="c6">claude plugin marketplace remove pauzza</code>
+          <button class="copy" type="button" data-copy="c6" data-label="Copy">Copy</button>
+        </div>
+      </details>
+
+      <p class="note">The only official copy is <a href="https://github.com/pauzza-app/pauzza-addon">github.com/pauzza-app/pauzza-addon</a>, installed through <span style="white-space:nowrap">pauzza-app/pauzza-marketplace</span>. Pauzza never asks for your card details or passwords.</p>
+    </div>
+  </section>
+
+  <!-- 3 · how it works -->
+  <section id="how" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">// how it works</p>
+      <h2>Three steps. One of them is waiting.</h2>
+      <p class="intro">Pauzza sits beside your work, not in it.</p>
+
+      <div class="how" data-reveal>
+        <div class="demo" id="demo" data-phase="6" role="img" aria-label="A made-up session, replayed: the AI tool works for 38 seconds; the status line then shows one gift ready; typing /pauzza opens a panel headed Test codes, not real offers, with Sample Kitchen, 20% off lunch; pressing Get code shows the code TEST-0001, and Copy copies it.">
+          <div class="demo-bar" aria-hidden="true">~/projects/sample-app</div>
+          <div class="demo-body" aria-hidden="true">
+            <p class="demo-work"><span class="demo-state">done in 38s</span> <span class="demo-note">// the tool's own area. pauzza never reads it.</span></p>
+            <div class="demo-lines"><i></i><i></i><i></i></div>
+            <p class="demo-prompt"><b>&gt;</b> <span id="demo-typed">/pauzza</span><i class="demo-caret"></i></p>
+            <div class="demo-panel">
+              <p class="demo-label">Test codes · not real offers</p>
+              <div class="demo-offer">
+                <div><strong>Sample Kitchen</strong><span>20% off lunch</span></div>
+                <div class="demo-right"><span class="demo-code">TEST-0001</span><span class="demo-btn">✓ Copied</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-status" aria-hidden="true"><span id="demo-status">🎁 1 · /pauzza</span></div>
+        </div>
+
+        <ol class="how-steps">
+          <li class="card">
+            <p class="num">01</p>
+            <h3>You wait</h3>
+            <p>Your AI tool is working and you have a minute. Pauzza does not interrupt: its panel opens only when you type /pauzza.</p>
+          </li>
+          <li class="card">
+            <p class="num">02</p>
+            <h3>An offer appears</h3>
+            <p>When something is ready, the line under the chat box says so, quietly.</p>
+          </li>
+          <li class="card">
+            <p class="num">03</p>
+            <h3>Press to get a code</h3>
+            <p>Open /pauzza, press Get code, then Copy. Or ignore it. Both are fine.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="caption how-note">// a made-up session, replayed. Sample Kitchen is not a real shop, and TEST-0001 works nowhere.</p>
+    </div>
+  </section>
+
+  <!-- 4 · privacy -->
+  <section id="privacy">
+    <div class="wrap">
+      <p class="eyebrow">// privacy</p>
+      <h2>What Pauzza will never do.</h2>
+      <p class="intro">Six promises, in plain words. Each one is written down in the add-on's own README and Privacy Policy, and you can check them against the code.</p>
+
+      <ul class="promises">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 5.2A9.8 9.8 0 0 1 12 5c5 0 8.5 4.4 9.5 7a12 12 0 0 1-2.6 3.8M6.4 6.5C4.300 8 3 10.300 2.500 12c1 2.600 4.500 7 9.500 7 1.500 0 2.900-.4 4.100-1"/><path d="M9.900 9.900a3 3 0 0 0 4.200 4.200"/></svg>
+          <h3>It never reads your work</h3>
+          <p>Not your code, not your prompts, not your conversations, not your files. It reads usage numbers and whether the tool is busy, and those stay on your computer.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          <h3>Nothing is sent before Connect</h3>
+          <p>Installing sends nothing. Accepting the Terms sends nothing. The add-on contacts Pauzza's server only after you press the separate Connect button.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.500-3 8.300-7 10-4-1.700-7-5.500-7-10V6l7-3z"/></svg>
+          <h3>Offers never reach the AI</h3>
+          <p>Offers are shown to you, beside the tool. Pauzza never puts them into anything the AI reads.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.500 12.500l2.500 2.500 4.500-5.500"/></svg>
+          <h3>Opt-in, twice</h3>
+          <p>Nothing runs until you accept. If you press Not now, it stays silent. Connecting is a second choice, and closing the panel declines it.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.500"/><path d="M3 20c0-3.300 2.700-6 6-6 1.200 0 2.300.3 3.200.9"/><path d="M16 15l5 5M21 15l-5 5"/></svg>
+          <h3>No name, no profile</h3>
+          <p>After Connect the server keeps a random number for your install and the test codes you claim. No name, phone or payment details. We build no profile of you and sell nothing.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v8"/><path d="M7 6.500a7.500 7.500 0 1 0 10 0"/></svg>
+          <h3>One switch to leave</h3>
+          <p>Under ⚙ there is one switch. It stops Pauzza, disconnects it, and asks the server to delete your install record. Free, at any time.</p>
+        </li>
+      </ul>
+
+      <p class="check-note">Like any internet request, a connected add-on shows the server your IP address; our hosting keeps it in technical logs for at most 7 days. The add-on's code is open under the MIT licence, so these are promises you can check by reading it. The full text is in the <a href="privacy.html">Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <!-- 5 · the honest line -->
+  <section class="test" id="test">
+    <div class="wrap">
+      <div class="tag" data-reveal>
+        <div class="tag-dot" aria-hidden="true"><i></i></div>
+        <div class="tag-text">
+          <p class="eyebrow">// this is a test</p>
+          <h2>Every code here is made up.</h2>
+          <p>Every offer, brand, code and prize in this test is invented. Test codes work at no shop, have no value, and give no right to any goods or discount.</p>
+          <p>The test is free, for people 18 or older, and ends on 18 November 2026. Real offers are not part of it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 6 · footer -->
+<footer>
+  <div class="wrap">
+    <p>pauzza · operated by U trust LLC, Tbilisi, Georgia · <a href="mailto:hello@pauzza.ge">hello@pauzza.ge</a></p>
+    <p><a href="terms.html">terms</a> · <a href="privacy.html">privacy</a></p>
+    <p class="small">Pauzza is an independent product, not made or approved by the maker of any AI tool it runs in. This page uses no cookies, no trackers and no analytics.</p>
+  </div>
+</footer>
+
+<script>
+// Copy buttons and the light/dark switch. Nothing is stored and nothing is sent.
+(function () {
+  var status = document.getElementById('copy-status');
+  function fallback(text) {
+    var t = document.createElement('textarea');
+    t.value = text; t.setAttribute('readonly', '');
+    t.style.position = 'fixed'; t.style.opacity = '0';
+    document.body.appendChild(t); t.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(t);
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var text = document.getElementById(b.dataset.copy).textContent;
+      var done = function () {
+        b.textContent = '✓ Copied'; b.setAttribute('data-done', '');
+        status.textContent = 'Copied. Now paste it into your terminal.';
+        setTimeout(function () { b.textContent = b.dataset.label; b.removeAttribute('data-done'); }, 2500);
+        if (b.dataset.goto) document.getElementById(b.dataset.goto).scrollIntoView();
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { fallback(text); done(); });
+      } else { fallback(text); done(); }
+    });
+  });
+  document.getElementById('theme').addEventListener('click', function () {
+    var root = document.documentElement;
+    var now = root.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    root.setAttribute('data-theme', now === 'light' ? 'dark' : 'light');
+  });
+})();
+</script>
+<script src="motion.js"></script>
+</body>
+</html>
