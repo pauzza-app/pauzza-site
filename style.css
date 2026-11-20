@@ -338,8 +338,6 @@ section {
   padding: var(--step) 0;
 }
 .hero { padding-bottom: 0; }
-#privacy { padding-bottom: 0; }
-#test { padding-bottom: calc(var(--step) * 0.6); }
 .alt {
   background: var(--surface);
 }
@@ -739,6 +737,11 @@ footer .small { flex-basis: 100%; }
   color: var(--mute);
   margin: 0 0 32px;
 }
+.doc h2 {
+  font-size: clamp(19px, 2.6vw, 24px);
+  margin: 36px 0 12px;
+}
+.doc > p { margin: 0 0 12px; }
 .doc ol { padding-left: 1.4em; }
 .doc li { margin-bottom: 16px; }
 .doc ul { margin-top: 10px; }
